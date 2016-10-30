@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.NumbersAsWordsTest" time="0.011" tests="12" errors="0" skipped="0" failures="12">
+<testsuite name="test.java.NumbersAsWordsTest" time="0.004" tests="12" errors="0" skipped="0" failures="12">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -79,7 +79,7 @@
 	at test.java.NumbersAsWordsTest.shouldTranslate56945781Correctly(NumbersAsWordsTest.java:147)
 ]]></failure>
   </testcase>
-  <testcase name="shouldThrowForNegative500000" classname="test.java.NumbersAsWordsTest" time="0.001">
+  <testcase name="shouldThrowForNegative500000" classname="test.java.NumbersAsWordsTest" time="0">
     <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
 	at org.junit.Assert.fail(Assert.java:88)
 	at test.java.NumbersAsWordsTest.shouldThrowForNegative500000(NumbersAsWordsTest.java:91)
@@ -91,7 +91,7 @@
 	at test.java.NumbersAsWordsTest.shouldThrowFor1100000099(NumbersAsWordsTest.java:121)
 </failure>
   </testcase>
-  <testcase name="shouldTranslate1Correctly" classname="test.java.NumbersAsWordsTest" time="0.007">
+  <testcase name="shouldTranslate1Correctly" classname="test.java.NumbersAsWordsTest" time="0">
     <failure message="expected:&lt;[one]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[one]> but was:<[]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
@@ -130,7 +130,7 @@
 	at test.java.NumbersAsWordsTest.shouldThrowForNegative1(NumbersAsWordsTest.java:46)
 </failure>
   </testcase>
-  <testcase name="shouldTranslate999999999Correctly" classname="test.java.NumbersAsWordsTest" time="0">
+  <testcase name="shouldTranslate999999999Correctly" classname="test.java.NumbersAsWordsTest" time="0.001">
     <failure message="expected:&lt;[nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine]> but was:<[]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)

@@ -9,6 +9,12 @@ public class SingleDigitTranslator implements NumberTranslator {
 	
 	@Override
 	public String translateNumber(int number) {
+		if (number < 1 || number > 9) {
+			throw new UnsupportedOperationException(
+				"translateNumber can only be applied to numbers 1-9."
+			);
+		}
+		
 		return DIGITS[number - 1];
 	}
 

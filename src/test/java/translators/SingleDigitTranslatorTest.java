@@ -16,6 +16,12 @@ public class SingleDigitTranslatorTest {
 		this.instance = new SingleDigitTranslator();
 	}
 
+	private static boolean checkOutOfBoundsNumberException(Exception e) {
+		final String message = "translateNumber can only be applied to numbers 1-9.";
+		
+		return e.getMessage().equals(message);
+	}
+	
 	@Test
 	public void shouldTranslate1Correctly() {
 		assertEquals("one", this.instance.translateNumber(1));
@@ -59,6 +65,36 @@ public class SingleDigitTranslatorTest {
 	@Test
 	public void shouldTranslate9Correctly() {
 		assertEquals("nine", this.instance.translateNumber(9));
+	}
+	
+	@Test
+	public void shouldThrowForLowerThan1() {
+		boolean correctExceptionThrown = false;
+		
+		try {
+			this.instance.translateNumber(0);			
+		} catch (UnsupportedOperationException e) {
+			correctExceptionThrown = checkOutOfBoundsNumberException(e);
+		}
+		
+		if (!correctExceptionThrown) {
+			fail("Expected UnsupportedOperationException to be thrown.");
+		}
+	}
+	
+	@Test
+	public void shouldThrowForGreaterThan9() {
+		boolean correctExceptionThrown = false;
+		
+		try {
+			this.instance.translateNumber(10);			
+		} catch (UnsupportedOperationException e) {
+			correctExceptionThrown = checkOutOfBoundsNumberException(e);
+		}
+		
+		if (!correctExceptionThrown) {
+			fail("Expected UnsupportedOperationException to be thrown.");
+		}
 	}
 
 }
