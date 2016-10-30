@@ -1,3 +1,4 @@
+test/java/translators/BelowHundredTranslator/TranslateNumberTest.class
 test/java/translators/MockSimpleUnitTranslator.class
 test/java/translators/SimpleUnitTranslator/CanTranslateTest.class
 test/java/NumbersAsWordsTest.class

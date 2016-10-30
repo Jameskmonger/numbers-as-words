@@ -1,26 +1,24 @@
 package main.java;
 
+import main.java.translators.BelowHundredTranslator;
 import main.java.translators.NumberTranslator;
 import main.java.translators.SimpleUnitTranslator;
 
 public class NumbersAsWords {
 	
-	private NumberTranslator simpleUnitTranslator;
+	private NumberTranslator belowHundredTranslator;
 	
 	public NumbersAsWords () {
-		this.simpleUnitTranslator = new SimpleUnitTranslator();
+		this.belowHundredTranslator = new BelowHundredTranslator(
+					new SimpleUnitTranslator()
+				);
 	}
 
 	public String translateNumber(int input) {
 		this.checkNumberBounds(input);
 		
-		if (this.simpleUnitTranslator.canTranslate(input)) {
-			return this.simpleUnitTranslator.translateNumber(input);
-		}
-		
-		// see if we have a valid value below 100
-		if (input < 100) {
-			return this.calculateBelowHundred(input);
+		if (this.belowHundredTranslator.canTranslate(input)) {
+			return this.belowHundredTranslator.translateNumber(input);
 		}
 		
 		// if the value is below 1000 then pass it down to be calculated as a "hundreds"
@@ -81,16 +79,6 @@ public class NumbersAsWords {
 		}
 		
 		return result;
-	}
-	
-	private String calculateBelowHundred(int input) {
-		// if it's less than 100, divide by 10 and go from there
-		int base10 = input / 10;
-		int mod10 = input % 10;
-				
-		// multiply the base 10 up so we get 90 and 1 from 91
-		return this.translateNumber(base10 * 10) 
-		   	+ " " + this.translateNumber(mod10);
 	}
 	
 }

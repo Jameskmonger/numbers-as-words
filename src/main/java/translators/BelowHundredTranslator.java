@@ -21,7 +21,17 @@ public class BelowHundredTranslator implements NumberTranslator {
 
 	@Override
 	public String translateNumber(int number) {
-		return null;
+		if (this.simpleUnitTranslator.canTranslate(number)) {
+			return this.simpleUnitTranslator.translateNumber(number);
+		}
+		
+		// if it's less than 100, divide by 10 and go from there
+		int base10 = number / 10;
+		int mod10 = number % 10;
+					
+		// multiply the base 10 up so we get 90 and 1 from 91
+		return this.translateNumber(base10 * 10) 
+		   	+ " " + this.translateNumber(mod10);
 	}
 	
 }
