@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0.002" tests="23" errors="0" skipped="0" failures="0">
+<testsuite name="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -63,12 +63,12 @@
   <testcase name="shouldReturnTrueFor1" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor2" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor3" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
-  <testcase name="shouldReturnTrueFor4" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0.001"/>
+  <testcase name="shouldReturnTrueFor4" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor5" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor6" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor7" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor8" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
-  <testcase name="shouldReturnTrueFor9" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0.001"/>
+  <testcase name="shouldReturnTrueFor9" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnFalseForNonTenNumbers" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnFalseForNegative5" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>
   <testcase name="shouldReturnTrueFor10" classname="test.java.translators.SimpleUnitTranslator.CanTranslateTest" time="0"/>

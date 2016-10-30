@@ -18,11 +18,12 @@ public class NumbersAsWords {
 			return this.simpleUnitTranslator.translateNumber(input);
 		}
 		
-		String valueBelowHundred = this.calculateBelowHundred(input);
-		if (valueBelowHundred != null) {
-			return valueBelowHundred;
+		// see if we have a valid value below 100
+		if (input < 100) {
+			return this.calculateBelowHundred(input);
 		}
 		
+		// if the value is below 1000 then pass it down to be calculated as a "hundreds"
 		if (input < 1000) {
 			return this.calculateLargerValue(
 				"hundred",
@@ -87,14 +88,9 @@ public class NumbersAsWords {
 		int base10 = input / 10;
 		int mod10 = input % 10;
 				
-		if (input < 100) {
-			// multiply the base 10 up so we get 90 and 1 from 91
-		    return this.translateNumber(base10 * 10) 
-		    	+ " " + this.translateNumber(mod10); 
-		}
-		
-		// return null if we can't do anything
-		return null;
+		// multiply the base 10 up so we get 90 and 1 from 91
+		return this.translateNumber(base10 * 10) 
+		   	+ " " + this.translateNumber(mod10);
 	}
 	
 }
