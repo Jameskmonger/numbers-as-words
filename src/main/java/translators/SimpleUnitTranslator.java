@@ -1,13 +1,16 @@
 package main.java.translators;
 
-public class SingleDigitTranslator implements NumberTranslator {
+public class SimpleUnitTranslator implements NumberTranslator {
 
 	static final String[] DIGITS = {
 		"one", "two", "three", "four", "five",
 		"six", "seven", "eight", "nine"
 	};
 	
-	@Override
+	public boolean canTranslate(int number) {
+		return false;
+	}
+	
 	public String translateNumber(int number) {
 		if (number < 1 || number > 9) {
 			throw new UnsupportedOperationException(

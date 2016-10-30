@@ -1,19 +1,19 @@
-package test.java.translators;
+package test.java.translators.SimpleUnitTranslator;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import main.java.translators.SingleDigitTranslator;
+import main.java.translators.SimpleUnitTranslator;
 
-public class SingleDigitTranslatorTest {
+public class TranslateNumberTest {
 
-	private SingleDigitTranslator instance;
+	private SimpleUnitTranslator instance;
 	
 	@Before
 	public void setUp() throws Exception {
-		this.instance = new SingleDigitTranslator();
+		this.instance = new SimpleUnitTranslator();
 	}
 
 	private static boolean checkOutOfBoundsNumberException(Exception e) {
