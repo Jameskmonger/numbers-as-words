@@ -17,7 +17,7 @@ public class TranslateNumberTest {
 	}
 
 	private static boolean checkOutOfBoundsNumberException(Exception e) {
-		final String message = "translateNumber can only be applied to numbers 0-19.";
+		final String message = "translateNumber can only be applied to numbers 0-19, and multiples of 10 between 20 and 90.";
 		
 		return e.getMessage().equals(message);
 	}
@@ -83,6 +83,16 @@ public class TranslateNumberTest {
 	}
 	
 	@Test
+	public void shouldTranslate20Correctly() {
+		assertEquals("twenty", this.instance.translateNumber(20));
+	}
+	
+	@Test
+	public void shouldTranslate50Correctly() {
+		assertEquals("fifty", this.instance.translateNumber(50));
+	}
+	
+	@Test
 	public void shouldThrowForLowerThan0() {
 		boolean correctExceptionThrown = false;
 		
@@ -98,11 +108,26 @@ public class TranslateNumberTest {
 	}
 	
 	@Test
-	public void shouldThrowForGreaterThan19() {
+	public void shouldThrowForGreaterThan90() {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(20);			
+			this.instance.translateNumber(100);			
+		} catch (UnsupportedOperationException e) {
+			correctExceptionThrown = checkOutOfBoundsNumberException(e);
+		}
+		
+		if (!correctExceptionThrown) {
+			fail("Expected UnsupportedOperationException to be thrown.");
+		}
+	}
+	
+	@Test
+	public void shouldThrowForNonMultipleOfTen() {
+		boolean correctExceptionThrown = false;
+		
+		try {
+			this.instance.translateNumber(55);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkOutOfBoundsNumberException(e);
 		}

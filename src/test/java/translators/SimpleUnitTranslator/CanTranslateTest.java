@@ -87,8 +87,51 @@ public class CanTranslateTest {
 	}
 	
 	@Test
-	public void shouldReturnFalseFor20() {
-		assertEquals(false, this.instance.canTranslate(20));
+	public void shouldReturnTrueFor20() {
+		assertEquals(true, this.instance.canTranslate(20));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor30() {
+		assertEquals(true, this.instance.canTranslate(30));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor40() {
+		assertEquals(true, this.instance.canTranslate(40));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor50() {
+		assertEquals(true, this.instance.canTranslate(50));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor60() {
+		assertEquals(true, this.instance.canTranslate(60));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor70() {
+		assertEquals(true, this.instance.canTranslate(70));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor80() {
+		assertEquals(true, this.instance.canTranslate(80));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor90() {
+		assertEquals(true, this.instance.canTranslate(90));
+	}
+	
+	@Test
+	public void shouldReturnFalseForNonTenNumbers() {
+		assertEquals(false, this.instance.canTranslate(25));
+		assertEquals(false, this.instance.canTranslate(45));
+		assertEquals(false, this.instance.canTranslate(55));
+		assertEquals(false, this.instance.canTranslate(95));
 	}
 
 }
