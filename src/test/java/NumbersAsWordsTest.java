@@ -52,7 +52,7 @@ public class NumbersAsWordsTest {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(10);			
+			this.instance.translateNumber(-10);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkNegativeNumberException(e);
 		}
@@ -67,7 +67,7 @@ public class NumbersAsWordsTest {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(100);			
+			this.instance.translateNumber(-100);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkNegativeNumberException(e);
 		}
@@ -82,7 +82,7 @@ public class NumbersAsWordsTest {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(500000);			
+			this.instance.translateNumber(-500000);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkNegativeNumberException(e);
 		}
@@ -140,6 +140,11 @@ public class NumbersAsWordsTest {
 	@Test
 	public void shouldTranslate21Correctly() {
 		assertEquals("twenty one", this.instance.translateNumber(21));
+	}
+	
+	@Test
+	public void shouldTranslate95Correctly() {
+		assertEquals("ninety five", this.instance.translateNumber(95));
 	}
 	
 	@Test

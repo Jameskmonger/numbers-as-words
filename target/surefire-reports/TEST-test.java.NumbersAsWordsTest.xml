@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.NumbersAsWordsTest" time="0.007" tests="12" errors="0" skipped="0" failures="9">
+<testsuite name="test.java.NumbersAsWordsTest" time="0.001" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -60,63 +60,16 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="shouldTranslate10Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldThrowForNegative10" classname="test.java.NumbersAsWordsTest" time="0.001">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowForNegative10(NumbersAsWordsTest.java:61)
-</failure>
-  </testcase>
-  <testcase name="shouldTranslate56945781Correctly" classname="test.java.NumbersAsWordsTest" time="0.001">
-    <failure message="expected:&lt;[fifty six million nine hundred and forty five thousand seven hundred and eighty one]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[fifty six million nine hundred and forty five thousand seven hundred and eighty one]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at test.java.NumbersAsWordsTest.shouldTranslate56945781Correctly(NumbersAsWordsTest.java:147)
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowForNegative500000" classname="test.java.NumbersAsWordsTest" time="0">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowForNegative500000(NumbersAsWordsTest.java:91)
-</failure>
-  </testcase>
-  <testcase name="shouldThrowFor1100000099" classname="test.java.NumbersAsWordsTest" time="0">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowFor1100000099(NumbersAsWordsTest.java:121)
-</failure>
-  </testcase>
+  <testcase name="shouldThrowForNegative10" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldTranslate56945781Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldThrowForNegative500000" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldThrowFor1100000099" classname="test.java.NumbersAsWordsTest" time="0"/>
   <testcase name="shouldTranslate1Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldTranslate95Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
   <testcase name="shouldTranslate0Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate21Correctly" classname="test.java.NumbersAsWordsTest" time="0">
-    <failure message="expected:&lt;[twenty one]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[twenty one]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at test.java.NumbersAsWordsTest.shouldTranslate21Correctly(NumbersAsWordsTest.java:142)
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowForNegative100" classname="test.java.NumbersAsWordsTest" time="0.001">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowForNegative100(NumbersAsWordsTest.java:76)
-</failure>
-  </testcase>
-  <testcase name="shouldThrowFor1000000099" classname="test.java.NumbersAsWordsTest" time="0.001">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowFor1000000099(NumbersAsWordsTest.java:106)
-</failure>
-  </testcase>
-  <testcase name="shouldThrowForNegative1" classname="test.java.NumbersAsWordsTest" time="0.002">
-    <failure message="Expected UnsupportedOperationException to be thrown." type="java.lang.AssertionError">java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
-	at org.junit.Assert.fail(Assert.java:88)
-	at test.java.NumbersAsWordsTest.shouldThrowForNegative1(NumbersAsWordsTest.java:46)
-</failure>
-  </testcase>
-  <testcase name="shouldTranslate999999999Correctly" classname="test.java.NumbersAsWordsTest" time="0.001">
-    <failure message="expected:&lt;[nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at test.java.NumbersAsWordsTest.shouldTranslate999999999Correctly(NumbersAsWordsTest.java:153)
-]]></failure>
-  </testcase>
+  <testcase name="shouldTranslate21Correctly" classname="test.java.NumbersAsWordsTest" time="0.001"/>
+  <testcase name="shouldThrowForNegative100" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldThrowFor1000000099" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldThrowForNegative1" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldTranslate999999999Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
 </testsuite>
