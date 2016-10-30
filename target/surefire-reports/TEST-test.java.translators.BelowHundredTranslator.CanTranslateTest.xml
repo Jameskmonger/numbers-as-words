@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.NumbersAsWordsTest" time="0.004" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="test.java.translators.BelowHundredTranslator.CanTranslateTest" time="0.004" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -59,17 +59,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldTranslate10Correctly" classname="test.java.NumbersAsWordsTest" time="0.001"/>
-  <testcase name="shouldThrowForNegative10" classname="test.java.NumbersAsWordsTest" time="0.001"/>
-  <testcase name="shouldTranslate56945781Correctly" classname="test.java.NumbersAsWordsTest" time="0.001"/>
-  <testcase name="shouldThrowForNegative500000" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldThrowFor1100000099" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate1Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate95Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate0Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate21Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldThrowForNegative100" classname="test.java.NumbersAsWordsTest" time="0.001"/>
-  <testcase name="shouldThrowFor1000000099" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldThrowForNegative1" classname="test.java.NumbersAsWordsTest" time="0"/>
-  <testcase name="shouldTranslate999999999Correctly" classname="test.java.NumbersAsWordsTest" time="0"/>
+  <testcase name="shouldReturnTrueForNonMultiplesOfTen" classname="test.java.translators.BelowHundredTranslator.CanTranslateTest" time="0.004"/>
+  <testcase name="shouldReturnTrueIfSimpleUnitTranslatorReturnsTrue" classname="test.java.translators.BelowHundredTranslator.CanTranslateTest" time="0"/>
 </testsuite>
