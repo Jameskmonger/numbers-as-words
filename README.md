@@ -10,4 +10,6 @@ Run the tests with `mvn test`.
 
 There is a `SimpleUnitTranslator` which handles all numbers 1 - 20, and then all multiples of 10 between 20 and 90 (inclusive).
 
-The entry point `NumbersAsWords` then translates at different levels ("simple", hundreds, thousands, millions) recursively until the whole number has been translated.
+There is a `BelowHundredTranslator` which is composed of a `SimpleUnitTranslator` and translates **all** numbers below 100.
+
+The entry point `NumbersAsWords` then translates at different levels (below 100, hundreds, thousands, millions) recursively until the whole number has been translated.
