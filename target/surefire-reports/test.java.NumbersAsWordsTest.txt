@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: test.java.NumbersAsWordsTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec <<< FAILURE! - in test.java.NumbersAsWordsTest
+shouldTranslate10Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[ten]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate10Correctly(NumbersAsWordsTest.java:101)
+
+shouldThrowForNegative10(test.java.NumbersAsWordsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.java.NumbersAsWordsTest.shouldThrowForNegative10(NumbersAsWordsTest.java:55)
+
+shouldTranslate56945781Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fifty six million nine hundred and forty five thousand seven hundred and eighty one]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate56945781Correctly(NumbersAsWordsTest.java:111)
+
+shouldThrowForNegative500000(test.java.NumbersAsWordsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.java.NumbersAsWordsTest.shouldThrowForNegative500000(NumbersAsWordsTest.java:85)
+
+shouldTranslate1Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[one]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate1Correctly(NumbersAsWordsTest.java:96)
+
+shouldTranslate0Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[zero]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate0Correctly(NumbersAsWordsTest.java:91)
+
+shouldTranslate21Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[twenty one]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate21Correctly(NumbersAsWordsTest.java:106)
+
+shouldThrowForNegative100(test.java.NumbersAsWordsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.java.NumbersAsWordsTest.shouldThrowForNegative100(NumbersAsWordsTest.java:70)
+
+shouldThrowForNegative1(test.java.NumbersAsWordsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: Expected UnsupportedOperationException to be thrown.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.java.NumbersAsWordsTest.shouldThrowForNegative1(NumbersAsWordsTest.java:40)
+
+shouldTranslate999999999Correctly(test.java.NumbersAsWordsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at test.java.NumbersAsWordsTest.shouldTranslate999999999Correctly(NumbersAsWordsTest.java:117)
+
