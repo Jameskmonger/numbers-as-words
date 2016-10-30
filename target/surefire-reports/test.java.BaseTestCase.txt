@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: test.java.BaseTestCase
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec <<< FAILURE! - in test.java.BaseTestCase
+shouldGiveFiveForFour(test.java.BaseTestCase)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<5> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at test.java.BaseTestCase.shouldGiveFiveForFour(BaseTestCase.java:21)
+
+shouldGiveTenForNine(test.java.BaseTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<10> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at test.java.BaseTestCase.shouldGiveTenForNine(BaseTestCase.java:26)
+
