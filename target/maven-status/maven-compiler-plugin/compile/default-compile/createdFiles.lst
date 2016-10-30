@@ -1,3 +1,3 @@
 main/java/NumbersAsWords.class
 main/java/translators/NumberTranslator.class
-main/java/translators/SingleDigitTranslator.class
+main/java/translators/SimpleUnitTranslator.class

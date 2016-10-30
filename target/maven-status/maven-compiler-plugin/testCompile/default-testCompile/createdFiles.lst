@@ -1,2 +1,3 @@
+test/java/translators/SimpleUnitTranslator/CanTranslateTest.class
 test/java/NumbersAsWordsTest.class
-test/java/translators/SingleDigitTranslatorTest.class
+test/java/translators/SimpleUnitTranslator/TranslateNumberTest.class

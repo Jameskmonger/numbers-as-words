@@ -8,11 +8,11 @@ public class SimpleUnitTranslator implements NumberTranslator {
 	};
 	
 	public boolean canTranslate(int number) {
-		return false;
+		return (number >= 1 && number <= 9);
 	}
 	
 	public String translateNumber(int number) {
-		if (number < 1 || number > 9) {
+		if (!this.canTranslate(number)) {
 			throw new UnsupportedOperationException(
 				"translateNumber can only be applied to numbers 1-9."
 			);
