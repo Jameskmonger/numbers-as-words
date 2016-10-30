@@ -17,7 +17,7 @@ public class TranslateNumberTest {
 	}
 
 	private static boolean checkOutOfBoundsNumberException(Exception e) {
-		final String message = "translateNumber can only be applied to numbers 1-9.";
+		final String message = "translateNumber can only be applied to numbers 0-19.";
 		
 		return e.getMessage().equals(message);
 	}
@@ -68,11 +68,26 @@ public class TranslateNumberTest {
 	}
 	
 	@Test
-	public void shouldThrowForLowerThan1() {
+	public void shouldTranslate10Correctly() {
+		assertEquals("ten", this.instance.translateNumber(10));
+	}
+	
+	@Test
+	public void shouldTranslate15Correctly() {
+		assertEquals("fifteen", this.instance.translateNumber(15));
+	}
+	
+	@Test
+	public void shouldTranslate19Correctly() {
+		assertEquals("nineteen", this.instance.translateNumber(19));
+	}
+	
+	@Test
+	public void shouldThrowForLowerThan0() {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(0);			
+			this.instance.translateNumber(-5);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkOutOfBoundsNumberException(e);
 		}
@@ -83,11 +98,11 @@ public class TranslateNumberTest {
 	}
 	
 	@Test
-	public void shouldThrowForGreaterThan9() {
+	public void shouldThrowForGreaterThan19() {
 		boolean correctExceptionThrown = false;
 		
 		try {
-			this.instance.translateNumber(10);			
+			this.instance.translateNumber(20);			
 		} catch (UnsupportedOperationException e) {
 			correctExceptionThrown = checkOutOfBoundsNumberException(e);
 		}

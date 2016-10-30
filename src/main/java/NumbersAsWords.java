@@ -5,7 +5,6 @@ import main.java.translators.SimpleUnitTranslator;
 
 public class NumbersAsWords {
 	
-	private final String ZERO = "zero";
 	private NumberTranslator simpleUnitTranslator;
 	
 	public NumbersAsWords () {
@@ -13,11 +12,7 @@ public class NumbersAsWords {
 	}
 
 	public String translateNumber(int input) {
-		if (input == 0) {
-			return this.ZERO;
-		}
-		
-		if (input > 0 && input < 10) {
+		if (this.simpleUnitTranslator.canTranslate(input)) {
 			return this.simpleUnitTranslator.translateNumber(input);
 		}
 		

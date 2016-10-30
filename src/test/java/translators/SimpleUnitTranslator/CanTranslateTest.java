@@ -62,13 +62,33 @@ public class CanTranslateTest {
 	}
 	
 	@Test
-	public void shouldReturnFalseFor0() {
-		assertEquals(false, this.instance.canTranslate(0));
+	public void shouldReturnTrueFor0() {
+		assertEquals(true, this.instance.canTranslate(0));
 	}
 	
 	@Test
-	public void shouldReturnFalseFor10() {
-		assertEquals(false, this.instance.canTranslate(10));
+	public void shouldReturnTrueFor10() {
+		assertEquals(true, this.instance.canTranslate(10));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor15() {
+		assertEquals(true, this.instance.canTranslate(15));
+	}
+	
+	@Test
+	public void shouldReturnTrueFor19() {
+		assertEquals(true, this.instance.canTranslate(19));
+	}
+	
+	@Test
+	public void shouldReturnFalseForNegative5() {
+		assertEquals(false, this.instance.canTranslate(-5));
+	}
+	
+	@Test
+	public void shouldReturnFalseFor20() {
+		assertEquals(false, this.instance.canTranslate(20));
 	}
 
 }

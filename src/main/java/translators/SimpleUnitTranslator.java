@@ -3,22 +3,24 @@ package main.java.translators;
 public class SimpleUnitTranslator implements NumberTranslator {
 
 	static final String[] DIGITS = {
-		"one", "two", "three", "four", "five",
-		"six", "seven", "eight", "nine"
+		"zero", "one", "two", "three", "four", "five",
+		"six", "seven", "eight", "nine", "ten", "eleven",
+		"twelve", "thirteen", "fourteen", "fifteen",
+		"sixteen", "seventeen", "eighteen", "nineteen"
 	};
 	
 	public boolean canTranslate(int number) {
-		return (number >= 1 && number <= 9);
+		return (number >= 0 && number <= 19);
 	}
 	
 	public String translateNumber(int number) {
 		if (!this.canTranslate(number)) {
 			throw new UnsupportedOperationException(
-				"translateNumber can only be applied to numbers 1-9."
+				"translateNumber can only be applied to numbers 0-19."
 			);
 		}
 		
-		return DIGITS[number - 1];
+		return DIGITS[number];
 	}
 
 }
